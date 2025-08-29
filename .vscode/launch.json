@@ -4,7 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "index2",
+            "request": "launch",
+            "mainClass": "index2",
+            "projectName": "codificacaooparabackendcomSergio_e3a4e3c"
+        },
+        {
+            "type": "java",
+            "name": "index",
+            "request": "launch",
+            "mainClass": "index",
+            "projectName": "codificacaooparabackendcomSergio_e3a4e3c"
+        },
         {
             "type": "node",
             "request": "launch",

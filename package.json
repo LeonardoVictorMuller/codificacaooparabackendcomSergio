@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon C:/Users/leonardo_v_morais/Desktop/codificacaooparabackendcomSergio/aulas/aula25_08/ex3.js"
+    "start": "nodemon C:/Users/leonardo_v_morais/Desktop/codificacaooparabackendcomSergio/aulas/aula29_08/index.js"
   },
   "keywords": [],
   "author": "",
