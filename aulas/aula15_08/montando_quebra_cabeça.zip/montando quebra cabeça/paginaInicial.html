@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+    
+        
+        #b {
+            text-align: center;
+            margin-top: 0;
+            padding: 20px;
+            background-color: #f0f0f0; /* Optional styling */
+        }
+        .container {
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 600px;
+        }
+
+        a {
+            flex: 1 1 calc(50% - 20px);
+            min-width: 120px;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .pag1 { background-color: #4CAF50; text-align: center;} /* Verde */
+        .pag2 { background-color: #e74c3c; text-align: center;} /* Vermelha */
+        .pag3 { background-color: #3498db; text-align: center;} /* Azul */
+        .pag4 { background-color: #f1c40f; color: #333; text-align: center;} /* Amarela (texto escuro p/ contraste) */
+    </style>
+</head>
+<body>
+    <h1 id="b" >Selecione a página que você deseja acessar!</h1>
+    
+    <div id="b" class="container">
+        <a href="/pag1" class="pag1">Página 1</a>
+        <a href="/pag2" class="pag2">Página 2</a>
+        <a href="/pag3" class="pag3">Página 3</a>
+        <a href="/pag4" class="pag4">Página 4</a>
+    </div>
+
+</body>
+</html>

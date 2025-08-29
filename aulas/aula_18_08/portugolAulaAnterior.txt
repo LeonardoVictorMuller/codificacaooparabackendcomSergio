@@ -1,0 +1,44 @@
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+
+const server = http.createServer((req, res) => { // cria o server req => requer e res => responde
+    let nomeDoHTML = '';
+
+    se (req.url === '/') {  // ele analisa a url do navegador, se esse essa url cruzar com a dos IFs ele guarda o nome do arquivo na variavel filePath(nomeDoHTML) para a funçao dentro de readFile executar depois  
+        nomeDoHTML = path.join(__dirname, 'paginaInicial.html');
+    } se senao (req.url === '/pag1') {
+        nomeDoHTML = path.join(__dirname, 'pVerde.html');
+    } se senao (req.url === '/pag2') {
+        nomeDoHTML = path.join(__dirname, 'pVermelha.html');
+    } se senao (req.url === '/pag3') {
+        nomeDoHTML = path.join(__dirname, 'pAzul.html');
+    } se senao (req.url === '/pag4') {
+        nomeDoHTML = path.join(__dirname, 'pAmarela.html');
+    } senao {
+        const errorPath = path.join(__dirname, 'erro.html');
+        fs.lerArquivo(errorPath, (err, data) => {
+            if (err) {
+                res.writeHead(500, { 'Content-Type': 'text/html' });
+                res.end('<h1>Erro interno no servidor</h1>');
+                return;
+            }
+            res.writeHead(404, { 'Content-Type': 'text/html' });
+            res.end(data);
+        });
+        return;
+    }
+
+    fs.lerArquivo&ExecutaHTML(nomeDoHTML, (err, HTMLdasCores) => {
+        if (err) {
+            res.writeHead(500, { 'Content-Type': 'text/html' });
+            res.end('<h1>Erro interno no servidor</h1>');
+            return;
+        }
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.end(HTMLdasCores);
+    });
+});
+
+server.listen(3000, () => { // diz em que lugar o servidor vai rodar
+    console.log('Servidor rodando em http://localhost:3000');});

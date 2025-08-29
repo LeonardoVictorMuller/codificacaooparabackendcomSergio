@@ -1,0 +1,11 @@
+if (req.url === '/' ) {
+        filePath = path.join(__dirname, 'pag0.html');
+    } else if (req.url === '/pag1') {
+        filePath = path.join()
+    } else if (req.url === '/pag2') {
+        filePath = path.join();
+    } else if (req.url === '') 
+        filePath = path.join(__dirname, 'pag3.html');
+    } else if (req.url === '/pag4') {
+        filePath = path.join(__dirname, 'pag4.html');
+    } 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #af4c4c;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #af4c4c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: #a04545;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem vindo à Página Vermelha</h1>
+        <h2>Escolha uma Página</h2>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Página Verde</h2>
+            <a href="/pag1">Ir para Pag1</a>
+        </div>
+      
+
+        <div class="card">
+            <h2>Página Azul</h2>
+            <a href="/pag3">Ir para Pag3</a>
+        </div>
+        <div class="card">
+            <h2>Página Amarela</h2>
+            <a href="/pag4">Ir para Pag4</a>
+        </div>
+    </div>
+
+</body>
+</html>

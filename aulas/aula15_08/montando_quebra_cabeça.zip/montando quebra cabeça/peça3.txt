@@ -1,0 +1,10 @@
+fs.readFile(filePath, (err, data) => {
+        if (err) {
+            res.writeHead(500, { 'Content-Type': 'text/html' });
+            res.end('<h1>Erro interno no servidor</h1>');
+            return;
+        }
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.end();
+    }):
+});

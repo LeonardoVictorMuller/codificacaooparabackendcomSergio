@@ -1,0 +1,13 @@
+{
+  "name": "codificacaooparabackendcomsergio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon C:/Users/leonardo_v_morais/Desktop/codificacaooparabackendcomSergio/aulas/aula25_08/ex3.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
