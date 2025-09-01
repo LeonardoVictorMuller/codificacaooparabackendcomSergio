@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página com Input — Demo</title>
+  <link rel="stylesheet" href="/static/style.css">
+  
+
+</head>
+<body>
+  <div class="card" role="region" aria-label="Exemplo de formulário com input, CSS e JS">
+    <div class="header">
+      <div class="title">Formulário com Input</div>
+      <div class="subtitle">Exemplo simples com rótulo flutuante, contador, validação e botões de ação.</div>
+    </div>
+
+    <div class="content">
+      <form id="form">
+        <div class="field">
+          <input id="nome" class="input" type="text" placeholder=" " autocomplete="off" minlength="3" maxlength="40" aria-describedby="ajuda" aria-labelledby="rotulo-nome" required />
+          <label id="rotulo-nome" class="label" for="nome">Seu nome</label>
+        </div>
+        <div class="hint" id="ajuda">
+          <span>Digite pelo menos 3 caracteres.</span>
+          <span class="counter" id="contador">0/40</span>
+        </div>
+        <div class="actions">
+          <button type="button" class="btn" id="copiar">Copiar</button>
+          <button type="button" class="btn danger" id="limpar">Limpar</button>
+          <button type="submit" class="btn primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/javascript.js"></script>
+</body>
+
+</html>
